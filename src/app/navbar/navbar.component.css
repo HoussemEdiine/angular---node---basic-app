@@ -1,0 +1,13 @@
+header{
+    background-color:white;
+    padding: 10px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+a:hover{
+text-decoration:underline;
+color:red;
+}

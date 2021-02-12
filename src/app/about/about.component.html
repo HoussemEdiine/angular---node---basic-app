@@ -1,0 +1,35 @@
+<div class="container">
+    <h1 style="margin-top: 250px; justify-content: center;">Table of products </h1>
+<div class="container">
+    <table class="table">
+        <thead  class="thead-dark">
+            <tr> 
+            <th>Name</th>
+            <th>price</th>
+            <th>stock</th> 
+            <th>category</th>
+            <th>refrence</th>   
+            </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let p of product.products">
+       <td> {{p.name}}</td> 
+       <td>{{p.price}} dt</td>
+       <td>{{p.stock}}</td>
+       <td>{{p.category}}</td>
+       <td>{{p._id}}</td> 
+        </tr>
+        </tbody>
+       
+        
+        
+    </table>
+   <div  style="margin-top:50px;">
+    <label for="price"> name</label> <input [(ngModel)]='name' />
+    <label for="price"> category</label> <input [(ngModel)]='category' />
+    <label for="price"> price</label> <input [(ngModel)]='price' />
+     <label for="">Stock</label><input [(ngModel)]='stock' />
+    <button class="btn btn-primary" (click)="addprod()">add prod</button>
+   </div>
+
+</div>
